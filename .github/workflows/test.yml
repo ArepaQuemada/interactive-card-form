@@ -21,4 +21,4 @@ jobs:
       - name: tests
         run: npm run coverage
       - name: log example
-        run: echo "test=hello >> " ${{steps}} 
+        run: echo "test=hello >> " ${{tests}} 
