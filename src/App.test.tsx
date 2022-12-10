@@ -1,7 +1,8 @@
 import App from "./App";
-import { screen, render } from "@testing-library/react";
+import { screen } from "@testing-library/react";
+import renderHelper from "./utils/renderHelper";
 
 test("Renders App", () => {
-  render(<App></App>);
-  expect(screen.getByText(/hello world/i)).toBeInTheDocument();
+  renderHelper(<App></App>);
+  expect(screen.getByText(/Card/i)).toBeInTheDocument();
 });
