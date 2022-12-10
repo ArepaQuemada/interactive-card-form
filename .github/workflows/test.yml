@@ -17,6 +17,6 @@ jobs:
         with: 
           node-version: ${{matrix.node-version}}
       - name: install dependencies
-        run: npm install
-      - name: tests
-        run: npm run test 
+        run: npm ci
+      - name: tests with coverage
+        run: npm run coverage
