@@ -4,12 +4,10 @@ import { mediaQueries } from "../media-queries";
 import { sizes } from "../sizes";
 
 const LayoutStyles = styled.div`
-  padding: 1rem;
   width: 100%;
 
   @media ${mediaQueries.desktop} {
     max-width: ${sizes.desktop};
-    padding: 4rem;
     display: flex;
   }
 `;
