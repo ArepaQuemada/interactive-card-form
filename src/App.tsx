@@ -1,5 +1,7 @@
+import CardForm from "./pages/CardForm";
+
 function App() {
-  return <div className="App">Hello World</div>;
+  return <CardForm />;
 }
 
 export default App;
