@@ -9,9 +9,8 @@ interface CardProps extends BaseComponentInterface {
 const Card = ({ children, imagePath }: CardProps) => {
   return (
     <BaseCardWrapper>
-      <ImageContainer>
-        {children}
-        <Image src={imagePath} alt="card image" />
+      <ImageContainer imagePath={imagePath}>
+        <div>{children}</div>
       </ImageContainer>
     </BaseCardWrapper>
   );
