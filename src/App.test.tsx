@@ -4,5 +4,5 @@ import renderHelper from "./utils/renderHelper";
 
 test("Renders App", () => {
   renderHelper(<App></App>);
-  expect(screen.getByText(/Card/i)).toBeInTheDocument();
+  expect(screen.getByText(/Form/i)).toBeInTheDocument();
 });
