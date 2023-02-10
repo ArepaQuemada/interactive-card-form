@@ -10,18 +10,28 @@ import {
   CardNumber,
 } from "./card-front.styled";
 import svg from "../../assets/images/card-logo.svg";
+import { useFormContext } from "../../hooks/useFormContext";
+import { getCardFormatted } from "../../utils/formatContext";
 
 const CardFront = () => {
+  const {
+    context: { cardNumber, expMonth, expYear, name },
+  } = useFormContext();
+
+  const cardNumberFormatted = getCardFormatted(cardNumber);
+
   return (
     <CardFrontWrapper>
       <Card imagePath={cardFrontImage}>
         <CircleSvg src={svg} />
         <NumberSection>
-          <CardNumber>0000 0000 0000 0000</CardNumber>
+          <CardNumber>{cardNumberFormatted}</CardNumber>
         </NumberSection>
         <DateAndNameWrapper>
-          <SmallSection>JUAN RIGUAL</SmallSection>
-          <SmallSection>00/00</SmallSection>
+          <SmallSection>{name.toLocaleUpperCase()}</SmallSection>
+          <SmallSection>
+            {expMonth}/{expYear}
+          </SmallSection>
         </DateAndNameWrapper>
       </Card>
     </CardFrontWrapper>
