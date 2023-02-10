@@ -29,7 +29,7 @@ export const DateAndNameWrapper = styled.div`
 `;
 
 export const CardNumber = styled.span`
-  letter-spacing: 3px;
+  letter-spacing: 0.2rem;
   font-weight: 400;
 
   @media ${mediaQueries.desktop} {
