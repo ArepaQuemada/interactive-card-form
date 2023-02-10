@@ -1,8 +1,11 @@
 import styled from "styled-components";
+import { mediaQueries } from "../../media-queries";
 
 export const FormWrapper = styled.div`
   margin-top: 4rem;
   max-width: 400px;
+  @media ${mediaQueries.desktop} {
+  }
 `;
 
 export const DateAndCvC = styled.div`
