@@ -2,13 +2,11 @@ import styled from "styled-components";
 import { mediaQueries } from "../../media-queries";
 
 export const CardFrontWrapper = styled.div`
+  z-index: 1;
   position: absolute;
-  bottom: -5vh;
-  z-index: 2;
-
+  transform: translate(-2em, 6em);
   @media ${mediaQueries.desktop} {
-    bottom: 50vh;
-    left: 20vw;
+    transform: translate(10vw, 7em);
   }
 `;
 

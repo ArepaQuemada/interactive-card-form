@@ -7,7 +7,6 @@ const LayoutStyles = styled.div`
   width: 100%;
 
   @media ${mediaQueries.desktop} {
-    max-width: ${sizes.desktop};
     display: flex;
   }
 `;

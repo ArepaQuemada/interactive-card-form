@@ -3,6 +3,7 @@ import CardUI from "../components/ui/card-ui/CardUI";
 import FormUI from "../components/ui/form-ui/FormUI";
 import CardFront from "../components/card-front/CardFront";
 import CardBack from "../components/card-back/CardBack";
+import Form from "../components/form/Form";
 
 const CardForm = () => (
   <>
@@ -10,7 +11,9 @@ const CardForm = () => (
       <CardFront />
       <CardBack />
     </CardUI>
-    <FormUI>Form</FormUI>
+    <FormUI>
+      <Form />
+    </FormUI>
   </>
 );
 
