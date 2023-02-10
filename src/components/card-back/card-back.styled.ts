@@ -3,12 +3,13 @@ import { mediaQueries } from "../../media-queries";
 
 export const CardBackWrapper = styled.div`
   position: absolute;
-  left: 4rem;
   text-align: end;
+  transform: translate(1em);
 
   @media ${mediaQueries.desktop} {
-    bottom: 22vh;
-    left: 25vw;
+    position: relative;
+    transform: translate(14vw, 25em);
+    z-index: 1;
   }
 `;
 
